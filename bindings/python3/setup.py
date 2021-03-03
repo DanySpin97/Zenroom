@@ -9,7 +9,7 @@ ECDH_CURVE = 'SECP256K1'
 if os.path.exists('bindings'):
     ZENROOM_ROOT = os.getcwd()
 else:
-    ZENROOM_ROOT = os.path.join(os.getcwd(), '../../')
+    ZENROOM_ROOT = os.path.dirname(os.path.dirname(os.getcwd()))
 
 ZENROOM_LIB_ROOT = os.path.join(ZENROOM_ROOT, 'src')
 
